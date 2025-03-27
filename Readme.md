@@ -20,9 +20,9 @@ For the first assignment, we were asked to create a basic HTML front and impleme
 
 Where the word “Smart” reflects the integration of machine learning later in the course.
 
----
 
 ### Choosing a Machine Learning Feature + Dataset
+---
 
 Since all my professional work revolves around **testing and QA**, it was a natural decision to build a machine learning feature focused on this domain. I chose a task that helps testers and developers predict whether a test might pass or fail based on historical data.
 
@@ -85,8 +85,6 @@ test_suite=perf-bench/test_name=Benchmark:_Syscall_Basic/
 vm_lifespan=long/vm_region=westus2/vm_sku=B8ms/unit=ops_sec.csv
 ```
 
----
-
 ### Data Extraction & Cleaning
 
 ---
@@ -145,7 +143,6 @@ Since this was a classification task (Pass = 0, Fail = 1), I tested two algorith
 
 But first, I normalized the input features: `value` and `runtime`.
 
----
 
 ### Training the Model: Logistic Regression
 
@@ -186,9 +183,7 @@ sigmoid(value × coef + bias) ≈ is_failed
 
 I validated this with a histogram that showed values clustered around 0, explaining the model's large coefficient weight.
 
----
-
-### 🧪 Evaluation Metrics:
+### 🧪 Evaluation Metrics for Logistic Regression Model:
 
 ```
 Accuracy: 0.99
@@ -212,9 +207,9 @@ F1 Score:  0.99
 
 File: `train-randomforest.py`
 
-Out of curiosity, I trained a second model — and was amazed:
+Out of curiosity, I trained a second model and was amazed:
 
-### Evaluation Metrics:
+### 🧪 Evaluation Metrics for Randomforest Model:
 
 ```
 Accuracy: 1.00
